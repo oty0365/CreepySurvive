@@ -1,31 +1,10 @@
 fileFormatVersion: 2
-guid: 950e50610cf35964099c70db40ef29fe
+guid: da05f1638505ae34598a2c1649a20202
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1481501174271704979
-    second: player-Sheet_0
-  - first:
-      213: -6762395561271956535
-    second: player-Sheet_1
-  - first:
-      213: -272438974752541882
-    second: player-Sheet_2
-  - first:
-      213: -3752603614806652085
-    second: player-Sheet_3
-  - first:
-      213: -9216255546789748376
-    second: player-Sheet_4
-  - first:
-      213: -8070331414718111439
-    second: player-Sheet_5
-  - first:
-      213: 7445652162699982354
-    second: player-Sheet_6
-  - first:
-      213: 8946493496161609273
-    second: player-Sheet_7
+      213: -4931446917046888264
+    second: logtile (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -147,177 +126,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player-Sheet_0
+      name: logtile (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8beddedae74efef41befee7cc6c888c4
+      internalID: -1138618817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logtile (1)_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1796496ac2b9842b7d04e3cddf0aa5
+      internalID: -633886501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logtile (1)_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 320
-        height: 320
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d6006350886a07be0800000000000000
-      internalID: -1481501174271704979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9cbe4b3d0152722a0800000000000000
-      internalID: -6762395561271956535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_2
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 64337e6223a183cf0800000000000000
-      internalID: -272438974752541882
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 0
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b4b4a9cf4e21cebc0800000000000000
-      internalID: -3752603614806652085
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 861af56f868491080800000000000000
-      internalID: -9216255546789748376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 1600
-        y: 0
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1312d06365c600090800000000000000
-      internalID: -8070331414718111439
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 1920
-        y: 0
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 216f9d67135445760800000000000000
-      internalID: 7445652162699982354
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 2240
-        y: 0
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9362e082f64582c70800000000000000
-      internalID: 8946493496161609273
+      spriteID: b5d65eb5b9e6f4844ae49ca789fb8818
+      internalID: -2116516536
       vertices: []
       indices: 
       edges: []
@@ -326,7 +195,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 7933b30648cdcb947ae231bc7f7fe369
+    spriteID: 3d32caf393f7cdf4996cf4f93988130c
     internalID: 0
     vertices: []
     indices: 
@@ -336,14 +205,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      player-Sheet_0: -1481501174271704979
-      player-Sheet_1: -6762395561271956535
-      player-Sheet_2: -272438974752541882
-      player-Sheet_3: -3752603614806652085
-      player-Sheet_4: -9216255546789748376
-      player-Sheet_5: -8070331414718111439
-      player-Sheet_6: 7445652162699982354
-      player-Sheet_7: 8946493496161609273
+      logtile (1)_0: -1138618817
+      logtile (1)_1: -633886501
+      logtile (1)_2: -2116516536
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
