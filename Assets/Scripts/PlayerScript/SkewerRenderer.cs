@@ -5,14 +5,14 @@ using UnityEngine;
 
 public class SkewerRenderer : MonoBehaviour
 {
-    [SerializeField] private GameObject head;         
+    [SerializeField] private GameObject head;       
     [SerializeField] private float renderDistance = 0.2f;
     [SerializeField] private GameObject[] chainObjTypes;
-    private List<GameObject> _chainPart =  new();
+    
+    private List<GameObject> _chainPart = new();
     private GameObject _player;
-
     private Coroutine _renderFlow;
-
+    
     public void StartRendering()
     {
         _player = PlayerAppearance.Instance.gameObject;
@@ -45,32 +45,49 @@ public class SkewerRenderer : MonoBehaviour
     {
         while (true)
         {
-            Vector2 dir = ((Vector2)head.transform.position - (Vector2)_player.transform.position).normalized;
             float distance = Vector2.Distance(_player.transform.position, head.transform.position);
-            float rotation = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            var counter = 0;
-            DisableAllChains();
-            for (float i = 0; i < distance; i+=renderDistance)
+            int requiredSegments = Mathf.CeilToInt(distance / renderDistance);
+            
+            while (_chainPart.Count < requiredSegments)
             {
-                var o =ObjectPoolManager.Instance.Get(chainObjTypes[counter % 2],(Vector2)_player.transform.position+dir*i,new Vector3(0,0,rotation-90)); 
-                _chainPart.Add(o);
-                counter++;
+                int typeIndex = _chainPart.Count % 2;
+                GameObject newChain = ObjectPoolManager.Instance.Get(chainObjTypes[typeIndex],_player.gameObject.transform.position, Vector3.zero);
+                _chainPart.Add(newChain);
             }
-            yield return null; 
+            
+            while (_chainPart.Count > requiredSegments)
+            {
+                int lastIndex = _chainPart.Count - 1;
+                ObjectPoolManager.Instance.Return(_chainPart[lastIndex]);
+                _chainPart.RemoveAt(lastIndex);
+            }
+            
+            Vector2 dir = ((Vector2)head.transform.position - (Vector2)_player.transform.position).normalized;
+            float rotation = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90;
+            
+            for (int i = 0; i < _chainPart.Count; i++)
+            {
+                Vector2 position = (Vector2)_player.transform.position + dir * (i * renderDistance);
+                _chainPart[i].transform.position = position;
+                _chainPart[i].transform.rotation = Quaternion.Euler(0, 0, rotation);
+            }
+            
+            yield return new WaitForSeconds(0.016f);
         }
     }
 
     private void OnEnable()
     {
+        
         var skewerPhysics = gameObject.GetComponent<SkewerPhysics>();
-        skewerPhysics.startRender+=StartRendering;
-        skewerPhysics.endRender+=StopRendering;
+        skewerPhysics.startRender += StartRendering;
+        skewerPhysics.endRender += StopRendering;
     }
 
     private void OnDisable()
     {
         var skewerPhysics = gameObject.GetComponent<SkewerPhysics>();
-        skewerPhysics.startRender-=StartRendering;
-        skewerPhysics.endRender-=StopRendering;
+        skewerPhysics.startRender -= StartRendering;
+        skewerPhysics.endRender -= StopRendering;
     }
 }

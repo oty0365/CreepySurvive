@@ -8,6 +8,7 @@ public class SkewerPhysics : MonoBehaviour,IPoolingObject
     public Action startRender;
     public Action endRender;
     [SerializeField] private Rigidbody2D rb2D;
+    [SerializeField] private ShadowRenderer shadowRenderer;
     private Vector2 _destination;
     private Vector2 _dir;
     private Coroutine _shootFlow;
@@ -18,6 +19,7 @@ public class SkewerPhysics : MonoBehaviour,IPoolingObject
     public void OnBirth()
     {
         _player = PlayerAppearance.Instance.gameObject;
+        shadowRenderer.Render();
     }
 
     public void SetSkewer(Vector2 destination, Vector2 dir, float distance)
@@ -34,7 +36,7 @@ public class SkewerPhysics : MonoBehaviour,IPoolingObject
         _shootFlow=StartCoroutine(ShootFlow());
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         var dir=_destination-(Vector2)_player.transform.position;
         var rot = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;

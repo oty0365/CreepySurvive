@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1496185932299998310}
   - component: {fileID: 1625572048157922783}
   - component: {fileID: 4517855174526116064}
+  - component: {fileID: 8604953986768313242}
+  - component: {fileID: 4562348117078616849}
   m_Layer: 0
   m_Name: ChainType1
   m_TagString: Untagged
@@ -56,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -101,3 +103,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolObjectType: 1
+--- !u!114 &8604953986768313242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7573754367939019213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab02319fd8ef4747a026f316448869a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shadowColor: {r: 0, g: 0, b: 0, a: 0.39215687}
+  shadowPrefab: {fileID: 1910952959337758955, guid: 39dc5b3c4bddb4f47bdc334337b879d4, type: 3}
+  order: 0
+  rendForce: 0.07
+--- !u!114 &4562348117078616849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7573754367939019213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f888ecf8d494824593b629250cd7032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shadowRenderer: {fileID: 8604953986768313242}

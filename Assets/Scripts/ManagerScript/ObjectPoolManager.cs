@@ -7,6 +7,9 @@ public enum PoolObjectType
     OldSkewerHead,
     SkewerBody1,
     SkewerBody2,
+    SpriteShadow,
+    TileMapShadow,
+    
 }
 
 public class ObjectPoolManager : SceneSingletonMonoBehaviour<ObjectPoolManager>
