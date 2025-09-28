@@ -3,9 +3,10 @@ using UnityEngine;
 public class ShadowRenderer : MonoBehaviour
 {
     public Color shadowColor;
+    public Sprite shadowSprite;
     public GameObject shadowPrefab;
     public int order;
-    public float rendForce;
+    public Vector2 rendForce;
 
     public void Render()
     {

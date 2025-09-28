@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6423149737496158469}
   - component: {fileID: -1000792845624850000}
   m_Layer: 4
-  m_Name: SpriteShadow
+  m_Name: SpriteShadowWithShader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,7 +57,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 2100000, guid: 720ab03e01b5f184eb0d08287dac7068, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -114,4 +114,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11955e3abe7e43540ab8935ea39ca280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolObjectType: 3
+  poolObjectType: 4

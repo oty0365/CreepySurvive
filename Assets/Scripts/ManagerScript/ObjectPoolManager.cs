@@ -8,7 +8,9 @@ public enum PoolObjectType
     SkewerBody1,
     SkewerBody2,
     SpriteShadow,
-    TileMapShadow,
+    SpriteShadowWithWave,
+    RealtimeSpriteShadow,
+    RealtimeSpriteShadowWithWave,
     
 }
 

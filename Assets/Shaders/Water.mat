@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Water
+  m_Shader: {fileID: 4800000, guid: 0a48ca11a99c32d44b41f8ce812ed992, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _NormalTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTex:
+        m_Texture: {fileID: 8400000, guid: 4e7e5172649212a44af97c1948f3374c, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Alpha: 1
+    - _Distortion: 0.003
+    - _EdgeThreshold: 0.5
+    - _NoiseScale: 41.8
+    - _NoiseStrength: 0.0052
+    - _ReflectionAlpha: 0.855
+    - _ShadowSharpness: 0
+    - _TintStrength: 0.407
+    - _WaterAlpha: 1
+    - _WaterY: 0
+    m_Colors:
+    - _WaterColor: {r: 0.5058824, g: 0.96538556, b: 1, a: 1}
+    - _WorldMax: {r: 7.111111, g: 4, b: 0, a: 0}
+    - _WorldMin: {r: -7.111111, g: -4, b: 0, a: 0}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

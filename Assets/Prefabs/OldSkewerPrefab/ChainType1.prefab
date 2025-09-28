@@ -115,10 +115,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dab02319fd8ef4747a026f316448869a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shadowColor: {r: 0, g: 0, b: 0, a: 0.39215687}
-  shadowPrefab: {fileID: 1910952959337758955, guid: 39dc5b3c4bddb4f47bdc334337b879d4, type: 3}
-  order: 0
-  rendForce: 0.07
+  shadowColor: {r: 1, g: 1, b: 1, a: 1}
+  shadowSprite: {fileID: 7541366605574735441, guid: 0c3fecb4e3f9c7d4ea63903e4b9e2cb5, type: 3}
+  shadowPrefab: {fileID: 1910952959337758955, guid: 2b4e98206fb5bba429cbe8e6d761ce69, type: 3}
+  order: -2
+  rendForce: {x: 0.1, y: 0.1}
 --- !u!114 &4562348117078616849
 MonoBehaviour:
   m_ObjectHideFlags: 0

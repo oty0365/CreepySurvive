@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4384213647048139673}
   - component: {fileID: 3544362042828212842}
   - component: {fileID: 4911789781540616319}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: TilemapShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 720ab03e01b5f184eb0d08287dac7068, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

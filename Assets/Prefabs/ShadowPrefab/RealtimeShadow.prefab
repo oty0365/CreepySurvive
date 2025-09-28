@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8561228968062958826}
   - component: {fileID: 2924700454546119216}
-  - component: {fileID: 6423149737496158469}
   - component: {fileID: -1000792845624850000}
+  - component: {fileID: 8088877046831718749}
   m_Layer: 4
-  m_Name: SpriteShadow
+  m_Name: RealtimeShadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89,19 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6423149737496158469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910952959337758955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 080f3c331fea0854cb7d008f8cf81bc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parent: {fileID: 0}
 --- !u!114 &-1000792845624850000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -114,4 +101,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11955e3abe7e43540ab8935ea39ca280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolObjectType: 3
+  poolObjectType: 5
+--- !u!114 &8088877046831718749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910952959337758955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bcb9e3d80675aa45a93a2970c2f16d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parent: {fileID: 0}
+  sr: {fileID: 2924700454546119216}
